@@ -1,0 +1,217 @@
+/***************************************
+ *           RESPONSIVE STYLES
+ ***************************************/
+
+/* === Base (Desktop-first approach) === */
+/* You already have this — large screens are the default */
+
+/* === TABLET SCREENS (max-width: 1024px) === */
+@media (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+
+  .site-header__container {
+    padding: 1.5rem 2rem;
+  }
+
+  .site-nav__list {
+    gap: 2rem;
+  }
+
+  .hero {
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 2rem;
+  }
+
+  .hero__actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero__features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero__image {
+    width: 70%;
+    position: static;
+    transform: none;
+    display: block;
+    margin: 3rem auto 0;
+  }
+}
+
+/* === MOBILE SCREENS (max-width: 768px) === */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* === Mobile Navigation Animation === */
+  .site-nav {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid var(--color-border);
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-nav.open {
+    max-height: 400px; /* adjust based on how many menu items you have */
+    opacity: 1;
+  }
+
+  /* Fade + slide-in animation for links */
+  .site-nav__link {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .site-nav.open .site-nav__link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered link animation for smooth effect */
+  .site-nav.open .site-nav__item:nth-child(1) .site-nav__link {
+    transition-delay: 0.1s;
+  }
+  .site-nav.open .site-nav__item:nth-child(2) .site-nav__link {
+    transition-delay: 0.2s;
+  }
+  .site-nav.open .site-nav__item:nth-child(3) .site-nav__link {
+    transition-delay: 0.3s;
+  }
+  .site-nav.open .site-nav__item:nth-child(4) .site-nav__link {
+    transition-delay: 0.4s;
+  }
+  .site-nav.open .site-nav__item:nth-child(5) .site-nav__link {
+    transition-delay: 0.5s;
+  }
+
+  /* Header */
+  .site-header__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .site-header__wrapper {
+    display: flex;
+    gap: 30rem;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .site-nav__link {
+    font-size: 1.8rem;
+  }
+
+  .site-nav__link--cta {
+    padding: 0.8rem 2rem;
+  }
+
+  /* Hero section */
+  .hero {
+    height: auto;
+    padding-top: 12rem;
+    text-align: center;
+  }
+
+  .hero__container {
+    padding: 2rem;
+  }
+
+  .hero__trust {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .hero__subtitle {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .hero__btn--download,
+  .hero__btn--demo {
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero__features {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .hero__image {
+    position: static;
+    transform: none;
+    width: 70%;
+    margin: 3rem auto 0;
+  }
+}
+
+/* === SMALL MOBILE (max-width: 480px) === */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .site-header__logo {
+    font-size: 2.4rem;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.6rem;
+  }
+
+  .hero__btn--download,
+  .hero__btn--demo {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .hero__features {
+    gap: 1rem;
+  }
+}
