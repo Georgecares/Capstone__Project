@@ -1,152 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Safe Trip</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/queries.css" />
-    <script defer src="/js/script.js"></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="site-header">
-      <div class="site-header__container">
-        <div class="site-header__wrapper">
-          <a href="/" class="site-header__logo">
-            <img
-              src="/images/logo_bg.png"
-              alt="Safe Trip logo"
-              class="site-header__logo-image"
-              width="40"
-              height="40"
-            />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeTrip - Stay Safe Anywhere, Anytime</title>
+    
+    <!-- Link to our External CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    
+  <!-- Link to our External JavaScript file (deferred to load after HTML) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+        <!-- ===== HOW IT WORKS SECTION ===== -->
+        <section class="how-it-works section" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How SafeTrip Works</h2>
+                    <p>Simple setup, powerful protection. Get started in minutes.</p>
+                </div>
 
-            <span class="site-header__brand">Safe Trip</span>
-          </a>
-          <button class="nav-toggle" aria-label="Toggle navigation">
-            <span class="hamburger"></span>
-          </button>
-        </div>
-
-        <nav class="site-nav">
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Features</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">How It Works</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Safety</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Download</a>
-            </li>
-            <li class="site-nav__item site-nav__item--highlight">
-              <a class="site-nav__link site-nav__link--cta" href="#"
-                >Get Started</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Main -->
-    <main class="main-content">
-      <section class="hero">
-        <div class="hero__container">
-          <p class="hero__trust">
-            <img
-              src="/images/trusted-icon.png"
-              alt="Trusted icon"
-              class="hero__trust-icon"
-              width="20"
-              height="20"
-            />
-            Trusted by travelers worldwide
-          </p>
-
-          <h1 class="hero__title">Stay Safe Anywhere, Anytime</h1>
-
-          <p class="hero__subtitle">
-            Your personal safety companion for travel. Send SOS alerts, check in
-            with loved ones,<br />
-            and find help nearby — even without network coverage.
-          </p>
-
-          <div class="hero__actions">
-            <a href="#" class="hero__btn hero__btn--download">
-              <img
-                src="/images/phone-icon.png"
-                alt="Phone icon"
-                class="hero__btn-icon"
-                width="20"
-                height="20"
-              />
-              Download App
-            </a>
-
-            <a href="#" class="hero__btn hero__btn--demo">
-              Watch Demo
-              <img
-                src="/images/arrow-icon.png"
-                alt="Arrow icon"
-                class="hero__btn-icon"
-                width="20"
-                height="20"
-              />
-            </a>
-          </div>
-
-          <ul class="hero__features">
-            <li class="hero__feature">
-              <img
-                src="/images/bullet.png"
-                alt=""
-                class="hero__feature-icon"
-                width="8"
-                height="8"
-              />
-              Works offline
-            </li>
-            <li class="hero__feature">
-              <img
-                src="/images/bullet.png"
-                alt=""
-                class="hero__feature-icon"
-                width="8"
-                height="8"
-              />
-              SMS fallback
-            </li>
-            <li class="hero__feature">
-              <img
-                src="/images/bullet.png"
-                alt=""
-                class="hero__feature-icon"
-                width="8"
-                height="8"
-              />
-              24/7 Support
-            </li>
-          </ul>
-
-          <figure class="hero__image-wrapper">
-            <img
-              src="/images/hero-page.png"
-              alt="Mobile app preview of Safe Trip"
-              class="hero__image"
-              width="405"
-              height="879"
-            />
-          </figure>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer"></footer>
-  </body>
+                <!-- Steps List -->
+                <ul class="how-it-works__steps">
+                    <li class="step-item">
+                        <div class="step-item__number">1</div>
+                        <div class="step-item__content">
+                            <h3>Download App</h3>
+                            <p>Install SafeTrip on your smartphone from the App Store or Google Play</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-item__number">2</div>
+                        <div class="step-item__content">
+                            <h3>Add Contacts</h3>
+                            <p>Set up your emergency contacts who will receive alerts and check-ins</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-item__number">3</div>
+                        <div class="step-item__content">
+                            <h3>Enable Permissions</h3>
+                            <p>Grant location and notification access for full functionality</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <div class="step-item__number">4</div>
+                        <div class="step-item__content">
+                            <h3>Stay Protected</h3>
+                            <p>Travel with confidence knowing help is always one tap away</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+</body>
 </html>
+
