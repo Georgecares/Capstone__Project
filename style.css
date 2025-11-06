@@ -1,0 +1,375 @@
+   /* GOOGLE FONTS (Inter) */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    /* CSS VARIABLES */
+    :root {
+      /* Colors */
+      --primary-color: #4F46E5;
+      --primary-color-dark: #4338CA;
+      --primary-color-light: #EEF2FF;
+      --dark-color: #1F2937;
+      --text-color: #4B5563;
+      --text-color-light: #6B7280;
+      --body-color: #FFFFFF;
+      --container-color: #F9FAFB;
+      --white-color: #FFFFFF;
+      --black-color: #000000;
+
+      /* Icon Colors */
+      --red-light: #FEF2F2;
+      --red-dark: #DC2626;
+      --blue-light: #EFF6FF;
+      --blue-dark: #3B82F6;
+      --green-light: #F0FDF4;
+      --green-dark: #16A34A;
+      --purple-light: #FAF5FF;
+      --purple-dark: #9333EA;
+      --orange-light: #FFF7ED;
+      --orange-dark: #F97316;
+      --steel-light: #F8FAFC;
+      --steel-dark: #475569;
+
+      /* Font & Typography */
+      --body-font: 'Inter', sans-serif;
+      --biggest-font-size: 2.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.875rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+
+      /* Font Weight */
+      --font-regular: 400;
+      --font-medium: 500;
+      --font-semibold: 600;
+      --font-bold: 700;
+      --font-extrabold: 800;
+
+      /* Sizing & Spacing */
+      --header-height: 4.5rem;
+      --spacing-sm: 0.5rem;
+      --spacing-md: 1rem;
+      --spacing-lg: 1.5rem;
+      --spacing-xl: 2rem;
+
+      /* Other */
+      --border-radius-sm: 0.375rem;
+      --border-radius-md: 0.5rem;
+      --border-radius-lg: 0.75rem;
+    }
+
+    /* BASE STYLES */
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--body-font);
+      font-size: var(--normal-font-size);
+      background-color: var(--body-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: var(--spacing-xl);
+      transition: padding 0.3s ease;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--dark-color);
+      font-weight: var(--font-semibold);
+    }
+
+    h1 {
+      font-size: var(--h1-font-size);
+    }
+
+    h2 {
+      font-size: var(--h2-font-size);
+    }
+
+    h3 {
+      font-size: var(--h3-font-size);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* EMERGENCY FEATURES SECTION */
+    .emergency-features.section {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      max-width: 868px;
+      margin: 0 auto;
+    }
+
+    .emergency-features__heading {
+      font-size: var(--h2-font-size);
+      font-weight: var(--font-bold);
+      color: var(--dark-color);
+      margin-top: 0;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .emergency-features__description {
+      font-size: 1.125rem;
+      color: var(--text-color-light);
+      margin-bottom: 32px;
+    }
+
+    /* --- Features List  --- */
+    .emergency-features__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+    }
+
+    .emergency-features__item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-md);
+    }
+
+    .emergency-features__item-title {
+      font-size: 1.125rem;
+      font-weight: var(--font-semibold);
+      color: var(--dark-color);
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+
+    .emergency-features__item-text {
+      font-size: 0.95rem;
+      color: var(--text-color-light);
+      margin: 0;
+    }
+
+    /* --- Feature Icons (Pastel Backgrounds) --- */
+    .emergency-features__icon-bg {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .emergency-features__icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .emergency-features__icon-img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    .emergency-features__icon-bg--green {
+      background-color: var(--green-light);
+      color: var(--green-dark);
+    }
+
+    .emergency-features__icon-bg--blue {
+      background-color: var(--blue-light);
+      color: var(--blue-dark);
+    }
+
+    .emergency-features__icon-bg--purple {
+      background-color: var(--purple-light);
+      color: var(--purple-dark);
+    }
+
+    .emergency-features__icon-bg--orange {
+      background-color: var(--orange-light);
+      color: var(--orange-dark);
+    }
+
+    /* --- Emergency Alert Card Wrapper (Gradient Background) --- */
+    .emergency-alert-card {
+      border-radius: 16px;
+      background: linear-gradient(96deg, #Eff6ff 10%, #Fef2f2 100%);
+      padding: 20px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 
+                  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* --- Inner Card Container (White with Border) --- */
+    .emergency-alert-card__inner {
+      background-color: var(--white-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 
+        /* Right side shadow */
+        3px 0 8px -2px rgba(0, 0, 0, 0.2),
+        /* Bottom shadow */
+        0 3px 8px -2px rgba(0, 0, 0, 0.5),
+        /* Left side shadow */
+        -3px 0 8px -2px rgba(0, 0, 0, 0.2),
+        /* Overall subtle shadow */
+        0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .emergency-alert-card__header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+      padding: 15px 20px;
+      background-color: var(--white-color);
+    }
+
+   
+    .emergency-alert-card__icon-bg--red {
+      background-color: var(--red-light);
+      color: var(--red-dark);
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .emergency-alert-card__icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .emergency-alert-card__title {
+      font-size: 1.1rem;
+      font-weight: var(--font-semibold);
+      color: var(--dark-color);
+      margin: 0;
+    }
+
+    .emergency-alert-card__subtitle {
+      font-size: var(--small-font-size);
+      color: var(--text-color-light);
+      margin: 0;
+    }
+
+    /* --- Horizontal Divider --- */
+    .emergency-alert-card__divider {
+      height: 1.5px;
+      background-color: #e5e7eb;
+      width: 94%;
+      margin: 0 auto;
+    }
+
+    /* --- Alert Card Body (Key/Value Rows) --- */
+    .emergency-alert-card__body {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: var(--white-color);
+    }
+
+    .emergency-alert-card__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 0.95rem;
+    }
+
+    .emergency-alert-card__label {
+      color: var(--text-color-light);
+    }
+
+    .emergency-alert-card__value {
+      color: var(--text-color);
+      font-weight: var(--font-medium);
+    }
+
+    /* --- "Active" Status Dot --- */
+    .emergency-alert-card__value--active {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--green-dark);
+      font-weight: var(--font-semibold);
+    }
+
+    .emergency-alert-card__active-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--green-dark);
+      border-radius: 50%;
+    }
+
+    /* --- Info Box - Subtle Badge Style --- */
+    .emergency-alert-card__info-box {
+      padding: 12px 20px;
+      background-color: var(--white-color);
+    }
+
+    .emergency-alert-card__info-box p {
+      margin: 0;
+      font-size: 0.8125rem; 
+      background-color: var(--blue-light);
+      color: var(--blue-dark);
+      font-weight: var(--font-medium);
+      border-radius: 6px;
+      line-height: 1.4;
+      text-align: center;
+      padding: 8px 12px;
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 640px) {
+      body {
+        padding: var(--spacing-md);
+      }
+
+      .emergency-features__heading {
+        font-size: 1.5rem;
+      }
+
+      .emergency-features__description {
+        font-size: var(--normal-font-size);
+      }
+
+      .emergency-alert-card__header {
+        padding: 16px;
+      }
+      
+      .emergency-alert-card__row {
+        padding: 12px 16px;
+      }
+      
+      .emergency-alert-card__info-box {
+        padding: 16px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      :root {
+        --biggest-font-size: 3rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.5rem;
+      }
+    }
