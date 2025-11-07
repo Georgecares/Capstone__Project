@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Card Section */
+.card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  gap: 4rem;
+  background-color: #fff;
+}
+
+/* Heading */
+.heading-container {
+  text-align: center;
+}
+
+.cardsection-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #101828;
+  margin-bottom: 1rem;
+}
+
+.cardsection-paragraph {
+  font-size: 2.4rem;
+  color: #4a5565;
+  max-width: 80rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100rem;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr); /* Desktop: 3 columns, 2 rows */
+}
+/* Boxes */
+.box {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 1.4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Icon */
+.cardicon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.4rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inner-cardicon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* Card Text */
+.card-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #101828;
+}
+
+.card-description {
+  font-size: 1.4rem;
+  color: #4a5565;
+  line-height: 1.5;
+}
+
+/* Card Colors */
+.cardicon-wrapper.one {
+  background-color: rgba(255, 226, 226, 1);
+}
+.cardicon-wrapper.two {
+  background-color: rgba(219, 234, 254, 1);
+}
+.cardicon-wrapper.three {
+  background-color: rgba(220, 252, 231, 1);
+}
+.cardicon-wrapper.four {
+  background-color: rgba(243, 232, 255, 1);
+}
+.cardicon-wrapper.five {
+  background-color: rgba(255, 237, 212, 1);
+}
+.cardicon-wrapper.six {
+  background-color: rgba(224, 231, 255, 1);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .cardsection-heading {
+    font-size: 2rem;
+  }
+  .cardsection-paragraph {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+  .card-name {
+    font-size: 1.6rem;
+  }
+  .card-description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .box {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
